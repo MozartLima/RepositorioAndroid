@@ -23,14 +23,12 @@ public class PrimeiraActivity extends Activity {
         EditText nome = (EditText) findViewById(R.id.nomeEditText);
         String info = nome.getText().toString();
 
-        Log.i("Logcat", info);
-        Toast t = Toast.makeText (this, info, Toast.LENGTH_SHORT );
-        t.show();
-
-
-
         Bundle bundle = new Bundle();
-        bundle.putString("nome",nome.getText().toString());
+        bundle.putString("nome", info);
+
+        Log.i("Logcat", info);
+
+        Toast.makeText(getApplicationContext(), info, Toast.LENGTH_SHORT).show();
 
         Intent intent = new Intent(this, SegundaActivity.class);
         intent.putExtras(bundle);
@@ -39,8 +37,4 @@ public class PrimeiraActivity extends Activity {
 
 
     }
-
-
-
-
 }

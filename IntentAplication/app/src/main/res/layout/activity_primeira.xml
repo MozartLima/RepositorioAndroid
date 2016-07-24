@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="OK"
-            android:id="@+id/bt"
-            android:onClick=" clicando "/>
+            android:id="@+id/button"
+            android:onClick="clicando"/>
     </LinearLayout>
 </RelativeLayout>

@@ -15,9 +15,10 @@ public class SegundaActivity extends Activity {
         Intent intent = getIntent();
 
         Bundle bundle = intent.getExtras();
+        String nome = bundle.getString("nome");
 
-        TextView exibirTextView = (TextView) findViewById(R.id.exibirTextView);
-        exibirTextView.setText(bundle.getString("nome")) ;
+        TextView textView = (TextView) findViewById(R.id.nomeTextView);
+        textView.setText(nome) ;
 
     }
 }

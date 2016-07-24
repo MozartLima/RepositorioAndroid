@@ -18,8 +18,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/exibirTextView"
-            android:layout_weight="0.08" />
+            android:id="@+id/nomeTextView"
+            android:layout_weight="0.08"
+            android:text=" "/>
 
 
 
